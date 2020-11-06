@@ -60,7 +60,7 @@ ClassA.init(data: 1)
 ClassA(data: 1)
 //: For class instances, the initializer that’s called must be marked with the required keyword or the entire class marked with the final keyword.
 type(of: object).init(data: 7)
-//object.dynamicType(data: 5)       // Error
+//type(of: object)(data: 5)       // Error
 
 /*:
  ## Object Identifier

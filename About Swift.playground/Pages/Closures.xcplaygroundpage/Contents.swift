@@ -80,10 +80,20 @@ names.sorted(by: >)
 names.sorted() {
   $0 > $1
 }
-//If a closure expression is the only argument you do not need to write a pair of parentheses ()
 
+// If a closure expression is the only argument you do not need to write a
+// pair of parentheses ()
 names.sorted {
   $0 > $1
+}
+//: ### Multiple Trailing Closures
+func funcWithMultipleTrailingClosures(first: () -> Void,
+                                      second: () -> Void) {}
+
+funcWithMultipleTrailingClosures {
+  
+} second: {
+  
 }
 //: ## Capturing Values
 func makeIncrementer(forIncrement amount: Int) -> () -> Int {
